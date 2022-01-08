@@ -1,0 +1,43 @@
+.withIcon--login{
+    display: none !important;
+}
+.withIconChildren--login{
+    position: relative;
+    top: 10px;
+}
+.withIconChildren--login :global(.vtex-button){
+    background: transparent !important;
+    outline: 0px !important;
+    border-right: 1px solid rgb(237, 237, 237);
+    margin-right: 5px;
+}
+.withIconChildren--login :global(.vtex-login-label){
+    text-transform: initial;
+    color: gray;
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 25px;
+}
+.withIconChildren--login :global(.vtex-login-label)::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    background: url(/arquivos/icon_login.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 6px;
+}
+.vtexIcon{
+    
+}
+
+.vtexIcon--vtex-plusIcon{
+
+}

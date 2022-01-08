@@ -1,0 +1,119 @@
+.container {
+  max-width: 96rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.inlineContainer {
+  margin-left: 0rem;
+}
+
+.star {
+  color: #802980 !important;
+  font-size: 2rem;
+}
+
+.starsContainer {
+  color: #802980 !important;
+}
+
+.loginLink{
+  padding: 0px !important;
+  color: #802980 !important;
+}
+
+.summaryContainer{
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  padding-bottom: 17px;
+}
+
+.star--filled{
+  color: #802980!important;
+  background: url(/arquivos/star_filled.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  background-size: 100%;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.star--empty {
+  background: url(/arquivos/estrella-vacia.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  background-size: 100%;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.formContainer {
+  padding: 0;
+}
+
+.formContainer :global(.vtex-card) {
+  background: #f0f0f0;
+  letter-spacing: 0px;
+  color: #464646;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Gotham';
+}
+
+.formContainer :global(.vtex-input__label) {
+  margin-left: 0;
+}
+
+.formContainer :global(.vtex-textarea__label) {
+  text-align: left;
+  font-size: 14px;
+  font-family: Gotham;
+  letter-spacing: 0px;
+  color: #454545;
+  font-weight: 300;
+  margin-left: 24px;
+}
+
+.formContainer :global(.vtex-styleguide-9-x-input) {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #A1A1A1;
+  border-radius: 10px;
+}
+
+.formContainer :global(.vtex-textarea__input) {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #A1A1A1;
+  border-radius: 10px;
+}
+
+.formContainer :global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+.formContainer :global(.vtex-button) {
+  padding: 0;
+  margin: 0;
+  border: none;
+  float: right;
+  background: #B5B5B5 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Gotham';
+  text-transform: inherit;
+  letter-spacing: 0.7px;
+}
+
+.formContainer :global(.vtex-reviews-and-ratings-2-x-reviewComment) {
+  padding: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #A1A1A1;
+  border-radius: 10px;
+}

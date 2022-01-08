@@ -1,0 +1,60 @@
+{
+  "store.custom.static-pages": {
+    "before": ["header.full"],
+    "allowed": ["titan-static-render"]
+  },
+  "store.custom.crea-con-viva-compra": {
+    "before": ["header.full"],
+    "allowed": [
+      "crea-con-viva-simple-breadcrumb",
+      "crea-con-viva-primary-slider",
+      "crea-con-viva-slider-products",
+      "crea-con-viva-section-three-banner",
+      "crea-con-viva-section-three-banner-2",
+      "crea-con-viva-section-vitrine",
+      "crea-con-viva-section-three-brands",
+      "crea-con-viva-six-banners",
+      "crea-con-viva-section-fillwidth-banner"
+    ]
+  },
+  "store.custom.crea-con-viva-mis-tableros": {
+    "before": ["header.full"],
+    "allowed": ["crea-con-viva-mis-tableros"]
+  },
+  "store.custom.crea-con-viva-destacados": {
+    "before": ["header.full"],
+    "allowed": ["crea-con-viva-destacados"]
+  },
+  "store.custom.crea-con-viva-board-preview": {
+    "before": ["header.full"],
+    "allowed": ["crea-con-viva-board-preview"]
+  },
+  "store.custom.crea-con-viva-app": {
+    "before": ["header.full"],
+    "allowed": ["crea-con-viva-app"]
+  },
+  "store.custom.crea-con-viva-live": {
+    "before": ["header.full"],
+    "allowed": ["livestreaming"]
+  },
+  "store.custom.demo-admin": {
+    "before": ["header.full"],
+    "allowed": ["demo-admin"]
+  },
+  "store.home": {
+    "allowed": ["livestreaming"]
+  },
+  "store.custom.comunidad-perfiles-store": {
+    "before": ["header.full"],
+    "allowed": ["vivamalls-perfiles-comunidad"]
+  },
+  "store.custom.comunidad-perfil-store": {
+    "before": ["header.full"],
+    "allowed": ["vivamalls-comunidad-perfil"]
+  },
+  "footer.search": {},
+  "store.search.custom": {
+    "after": ["footer.search"]
+  },
+  "store.product.custom": {}
+}

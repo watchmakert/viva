@@ -1,0 +1,217 @@
+{
+  "vtex.menu@2.x:menu#colum_1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "linksFooter"
+    },
+    "children": [
+      "rich-text#footer_col_1"
+    ]
+  },
+  "vtex.menu@2.x:menu#colum_2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "linksFooter"
+    },
+    "children": [
+      "rich-text#footer_col_2"
+    ]
+  },
+  "vtex.menu@2.x:menu#colum_3": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "linksFooter"
+    },
+    "children": [
+      "rich-text#footer_col_3"
+    ]
+  },
+  "vtex.menu@2.x:menu#colum_4": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "linksFooter"
+    },
+    "children": [
+      "rich-text#footer_col_4"
+    ]
+  },
+
+
+  "rich-text#footer_col_1": {
+    "props": {
+      "text": "Titulo Footer",
+      "blockClass": "footerMenuTitles"
+    }
+  },
+  "rich-text#footer_col_2": {
+    "props": {
+      "text": "Titulo Footer",
+      "blockClass": "footerMenuTitles"
+    }
+  },
+  "rich-text#footer_col_3": {
+    "props": {
+      "text": "Titulo Footer",
+      "blockClass": "footerMenuTitles"
+    }
+  },
+  "rich-text#footer_col_4": {
+    "props": {
+      "text": "Titulo Footer",
+      "blockClass": "footerMenuTitles"
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu_mobile"
+    },
+    "children": [
+      "menu-item#help-mobile",
+      "menu-item#about-viva-mobile",
+      "menu-item#community-mobile",
+      "menu-item#legals-mobile"
+    ]
+  },
+
+  "menu-item#help-mobile": {
+    "props": {
+      "id": "menu-item-category-help",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Menu 1",
+        "text": "Menu 1"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#helper"]
+  },
+  "menu-item#about-viva-mobile": {
+    "props": {
+      "id": "menu-item-category-about",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Menu 1",
+        "text": "Menu 1"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#about"]
+  },
+  "menu-item#community-mobile": {
+    "props": {
+      "id": "menu-item-category-community",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Menu 1",
+        "text": "Menu 1"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#community"]
+  },
+  "menu-item#legals-mobile": {
+    "props": {
+      "id": "menu-item-category-legales",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Menu 1",
+        "text": "Menu 1"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#legales"]
+  },
+
+
+
+
+  "vtex.menu@2.x:submenu.accordion#helper": {
+    "children": ["vtex.menu@2.x:menu#help-accordion"]
+  },
+  "vtex.menu@2.x:submenu.accordion#about": {
+    "children": ["vtex.menu@2.x:menu#about-accordion"]
+  },
+  "vtex.menu@2.x:submenu.accordion#community": {
+    "children": ["vtex.menu@2.x:menu#community-accordion"]
+  },
+  "vtex.menu@2.x:submenu.accordion#legales": {
+    "children": ["vtex.menu@2.x:menu#legales-accordion"]
+  },
+
+
+
+
+
+  "vtex.menu@2.x:menu#help-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#item_menu_mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#about-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#item_menu_mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#community-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#item_menu_mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#legales-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#item_menu_mobile"
+    ]
+  },
+
+
+
+
+  "menu-item#item_menu_mobile": {
+    "props": {
+      "id": "menu-item-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Demo",
+        "text": "Demo"
+      }
+    }
+  }
+
+
+}

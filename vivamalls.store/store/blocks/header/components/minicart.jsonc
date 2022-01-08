@@ -1,0 +1,8 @@
+{
+    "minicart-viva": {
+        "props": {
+            "blockClass": "iconMiniCart"
+        },
+        "children": ["minicart-base-content"]
+      }
+}

@@ -1,0 +1,317 @@
+.section--confirmation {
+    background: #871E80 0% 0% no-repeat;
+    padding: 50px 0px;
+    padding-top: 60px;
+}
+.section--confirmation :global(.vtex-store-components-3-x-container){
+    width: 80% !important;
+    margin: 0 auto;
+    padding: 0;
+}
+.section--confirmation :global(.vtex-store-components-3-x-container) :global(.vtex-flex-layout-0-x-flexRowContent){
+    display: block;
+    width: 100%;
+}
+.section--confirmation :global(.vtex-store-components-3-x-container) :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    display: inline-block;
+    vertical-align: top;
+}
+.section--confirmation :global(.vtex-store-components-3-x-container) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{
+    width: 10% !important;
+    margin-right: 0% !important;
+    text-align: left !important;
+    position: relative;
+}
+.section--confirmation :global(.vtex-store-components-3-x-container) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+    width: 89% !important;
+    margin-right: -4px !important;
+}
+.section--confirmation :global(.vtex-store-components-3-x-container) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child :global(.vtex-order-placed-2-x-confirmationIconWrapper){
+    position: absolute;
+    left: 0px;
+    top: 25px;
+}
+.orderNumber{
+    display: none !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .section--confirmation :global(.vtex-store-components-3-x-container){
+        width: 90% !important;
+    }
+    .section--confirmation :global(.vtex-store-components-3-x-container) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{
+        width: 100% !important;
+        height: 78px;
+    }
+    .section--confirmation :global(.vtex-store-components-3-x-container) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+        width: 100% !important;
+        margin-right: 0px !important;
+    }
+    .section--confirmation {
+        padding: 14px !important;
+        margin-top: 68px !important;
+        text-align: left !important;
+        padding-top: 20px !important;
+        margin-bottom: 30px !important;
+    }
+    .section--confirmation :global(.vtex-flex-layout-0-x-flexColChild ){
+        text-align: left !important;
+    }
+    .confirmationIconWrapper{
+        float: left !important;
+        position: absolute !important;
+        left: 0px!important;
+        top: 12px!important;
+    }
+    .totalListItemValue{
+        color: #762176 !important;
+    }
+    .confirmationMessage{
+        width: 100% !important;
+    }
+    .orderNumber{
+        font-size: 22px; 
+    }
+
+    .productQuantity{
+        width: 28px !important;
+        height: 28px !important;
+        line-height: 30px !important;
+    }
+
+    .productPrice{
+        font-size: 15px !important;
+    }
+    
+    .productQuantity{
+        width: 28px !important;
+        height: 28px !important;
+        line-height: 30px !important;
+    }
+    .productPrice{
+        font-size: 15px !important;
+    }
+
+}
+
+
+.confirmationIconWrapper {
+    background: white;
+    margin-right: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.updateOrderButton, .myOrdersButton{
+    display: none;
+}
+
+.confirmationIconWrapper::before {
+    content: "";
+    background: url('/arquivos/pedido_confirmado_icon.png');
+    width: 71%;
+    height: 71%;
+    position: absolute;
+    z-index: 2;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.confirmationIconWrapper::after {
+    content: "";
+    background: white;
+    width: 71%;
+    height: 71%;
+    position: absolute;
+    left: 10px;
+}
+
+.confirmationTitle {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-family: 'Gotham';
+    font-size: 0px;
+}
+
+.confirmationTitle::before {
+    font-size: 1.5rem;
+    content: "¡Muchas gracias!";
+    font-weight: 100;
+}
+
+
+.titleNameHead {
+    color: #FFFFFF;
+    text-align: left;
+    letter-spacing: 0px;
+    font-size: 1.5rem;
+    font-family: 'Gotham';
+    display: block;
+    font-weight: 600;
+    padding-top: 8px;
+}
+
+
+.confirmationMessage {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    width: 100%;
+    font-family: 'Gotham';
+    font-weight: 100;
+}
+
+.orderList {
+    font-family: 'Gotham';
+}
+
+.orderNumber {
+    font-family: 'Gotham';
+}
+
+.section--paymentMethods{
+    border: 0px !important;
+}
+.section--pickupPackages{
+    border: 0px !important;
+}
+.section--deliveryPackages{
+    border: 0px !important;
+}
+.package--delivery {
+    display: table;
+    margin: 0px;
+    width: 100%;
+}
+.packageHeaderColumn{
+    display: table-footer-group; 
+}
+
+.productImageWrapper {
+    background: #fff;
+    padding: 8px;
+    border-radius: 12px;
+}
+.productName{
+    font-weight: 700;
+    font-size: 18px;
+    color: #585858;
+    display: block;
+    width: 44%;
+}
+
+.productList{
+    width: 100%;
+    background: #F0F0F0;
+    max-height: 150px;
+    overflow: auto;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    display: table-header-group;
+    margin-bottom: 20px;
+}
+
+.packageHeader--delivery{
+    margin-top: 30px;
+}
+
+.productListItem{
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 140px;
+}
+.productWrapper{
+    display: block;
+    width: 100%;
+}
+
+.productImageWrapper{
+    position: absolute;
+    left: 26px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.productInfoColumn{
+    display: block;
+    position: relative;
+    padding-left: 152px;
+    padding-top: 15px;
+    width: 82%;
+}
+
+.productQuantity{
+    position: absolute;
+    background: #fff;
+    left: 0px;
+    right: -24%;
+    margin: auto;
+    top: 50px;
+    z-index: 2;
+    border: 1px solid #812481;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 45px;
+    overflow: hidden;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 34px;
+    font-size: 14px;
+}
+
+.productPrice{
+    position: absolute;
+    right: 22px;
+    top: 52px;
+    bottom: 0px;
+    height: 80px;
+    margin: auto;
+    z-index: 2;
+    color: #812481;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.totalList {
+    width: 100%;
+}
+
+.totalListItem {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.totalListItemLabel {
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #464646;
+}
+
+.totalListItemValue {
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #762176;
+    font-weight: 900;
+}
+.updateOrderButton :global(.vtex-button__label){
+    background: #871e80;
+    color: white;
+    font-family: 'Gotham';
+    font-weight: 100;
+}
+.myOrdersButton :global(.vtex-button__label){
+    background: #871e80;
+    color: white;
+    font-family: 'Gotham';
+    font-weight: 100;
+}

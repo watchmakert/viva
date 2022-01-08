@@ -1,0 +1,113 @@
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+/*
+.socialNetworkWrapper{
+
+}*/
+.socialNetworkWrapper::before{
+  content: 'Siguenos en:';
+  position: relative;
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+  font-family: 'Gotham';
+  margin-bottom: 14px;
+}
+
+/*.socialNetworksContainer{
+
+}*/
+
+.socialNetworkLink{
+  color: #fff;
+  opacity: 1;
+  margin: 0 26px;
+}
+.socialNetworksContainer .socialNetworkLink:first-child{
+  margin-left: 9px !important;
+}
+
+.socialNetworkLink:last-child{
+  margin-right: 0px !important;
+}
+.socialNetworkImage--facebook{
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("/arquivos/FaceIconFooter.png") no-repeat;
+  width: 12px;
+  height: 25px;
+  padding-left: 180px;
+}
+.socialNetworkImage--instagram{
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("/arquivos/InstagramIconFooter.png") no-repeat;
+  width: 12px;
+  height: 23px;
+  padding-left: 180px;
+}
+.socialNetworkImage--twitter{
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("/arquivos/TwitterIconFooter.png") no-repeat;
+  width: 12px;
+  height: 20px;
+  padding-left: 180px;
+}
+
+.socialNetworkImage--youtube{
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("/arquivos/YouTubeIconFooter.png") no-repeat;
+  width: 12px;
+  height: 16px;
+  padding-left: 180px;
+}
+.socialNetworkImage--linkedin{
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("/arquivos/LinkedinIconFooter.png") no-repeat;
+  width: 12px;
+  height: 20px;
+  padding-left: 98px;
+}
+
+@media (max-width: 992px){
+  .socialNetworkLink{
+     margin: 0 16px;
+  }
+  .socialNetworksContainer{
+    align-items: center;
+    justify-content: center;
+  }
+  .socialNetworkImage--youtube{
+    padding-left: 70px;
+  }
+  .socialNetworkImage--linkedin{
+    padding-left: 30px;
+  }
+  .socialNetworksContainer .socialNetworkLink{
+    margin: 0 10px !important;
+  }
+}
+
+@media (max-width:320px){
+  .socialNetworkLink{
+    margin: 0 8px;
+  }
+}

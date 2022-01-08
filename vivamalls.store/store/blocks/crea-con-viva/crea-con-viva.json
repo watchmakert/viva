@@ -1,0 +1,12 @@
+{
+    "crea-con-viva-app":{
+        "children": [
+            "crea-con-viva-backgrounds",
+            "crea-con-viva-patterns",
+            "crea-con-viva-stickers"
+        ],
+        "props": {
+            "blockClass": "vivamalls-creaapp"
+        }
+    }
+}

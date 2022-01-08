@@ -1,0 +1,35 @@
+{
+    "chef-newsletter": {
+      "children": ["newsletter"]
+    },
+    "chef-promise": {
+      "props": {
+        "lineHeight": 202,
+        "blockHeight": 600
+      }
+    },
+    "chef-promise#order-placed": {
+      "props": {
+        "lineHeight": 99,
+        "blockHeight": 99,
+        "promiseList": [
+          {
+            "icon": "https://celsia.vtexassets.com/assets/vtex.file-manager-graphql/images/51243297-d70a-47a0-8c19-b6e75cd678eb___0b7d3973a5f2a7318d34c01b996bc7bc.svg",
+            "title": "Datos del comprador"
+          },
+          {
+            "icon": "https://celsia.vtexassets.com/assets/vtex.file-manager-graphql/images/2fbe74a3-bb52-4205-9bfc-03a4c37e9ea1___085f9a2fa53a3ce6be6c80ff18f7708b.svg",
+            "title": "Método de entrega"
+          },
+          {
+            "icon": "https://celsia.vtexassets.com/assets/vtex.file-manager-graphql/images/fb59ff94-1359-4f6b-a05e-a67b68335492___0fc1022b557a6b91dea3b7a0102752fb.svg",
+            "title": "Forma de pago"
+          },
+          {
+            "icon": "https://celsia.vtexassets.com/assets/vtex.file-manager-graphql/images/6538aa82-175f-4d58-aa4a-94c757db269e___cfff878af9df67659489f9074b972ba3.svg",
+            "title": "Pedido confirmado"
+          }
+        ]
+      }
+    }
+  }

@@ -1,0 +1,56 @@
+.homeLink::after{
+    content: 'Inicio';
+}
+.homeLink .homeIcon{
+    display: none;
+}
+
+.ProductDescription, .secondPrice, .totalPrice{
+    font-family: "SFDisplay";
+    font-weight: 400;
+    font-size: 14px;
+    color: #464646;
+}
+.ProductPrice{
+    font-family: "SFDisplay";
+    font-weight: 700;
+    font-size: 14px;
+    color: #812481;
+}
+.goToCheckout{
+    font-family: "Gotham";
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.containerBread{
+    display: block;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-family: 'Gotham';
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.containerBread .link{
+    color: #4c4c4c;
+    text-decoration: none;
+}
+
+
+@media (max-width:992px){
+    /*.iconDrawer{
+        background: #EFEFEF !important;
+        width: 100%;
+        margin-left: -8px;
+        bottom: -36px;
+        padding: 10px 0 10px 8px;
+        height: 36px;
+    }
+    .modalDrawerContainerMinicart{
+        top: 63px;
+        right: 0px;
+    }*/
+}

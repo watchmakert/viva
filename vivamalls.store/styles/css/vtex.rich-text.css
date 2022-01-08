@@ -1,0 +1,257 @@
+.container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--shelfTitle {
+  color: #727273;
+  justify-content: center;
+  text-align: center;
+}
+
+.headingLevel2--shelfTitle {
+  font-weight: 200;
+}
+
+.container--deals .paragraph {
+  margin: 0;
+}
+
+.container--link {
+  justify-content: center;
+}
+
+.container--question {
+  justify-content: center;
+}
+
+.container--question .paragraph {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 16px;
+  padding-top: 120px;
+  color: #03034E;
+}
+
+.container--question .strong {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.container--link .paragraph {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034E;
+}
+
+.container--link .strong {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container--link .link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034E;
+}
+
+.container--title {
+  color: #03034E;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 640px) {
+  .container--question .strong {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .container--about {
+    max-width: 85%;
+  }
+
+  .container--title {
+    color: #03034E;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 60%;
+  }
+
+  .container--title .paragraph {
+    line-height: 1.3em;
+  }
+}
+
+
+.wrapper--homeBread-message{
+  padding-left: 18px;
+}
+.paragraph--homeBread-message{
+  font-family: 'Gotham';
+  margin: 9px 0;
+  font-size: 0px;
+}
+.paragraph--homeBread-message::before{
+  font-family: 'Gotham';
+  font-size: 13px;
+  content: 'Inicio / ';
+}
+.paragraph--homeBread-message::after{
+  font-family: 'Gotham';
+  font-size: 13px;
+  content: 'Compra';
+  font-weight: 700;
+}
+
+.paragraph--homeSection-title{
+  font-size: 32px;
+  color: #454545;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-family: 'Gotham';
+  letter-spacing: 0px;
+  margin-top: 18px;
+}
+.paragraph--triggerMenuMobile{
+  display: none !important;
+}
+
+.paragraph--homeSection-subtitle{
+  font-size: 20px;
+  color: #767676;
+  font-weight: 500;
+  margin-bottom: 56px;
+  margin-top: -32px;
+  font-family: 'Gotham';
+}
+@media only screen and (max-width: 1400px) {
+  .paragraph--homeSection-subtitle{
+    margin-bottom: 40px !important;
+  }
+}
+
+.wrapper--deals{
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+.paragraph--deals{
+  font-family: 'Gotham';
+  font-size: 18px;
+}
+
+.paragraph--footervivaleft{
+  font-family: 'Gotham';
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.paragraph--footerCopy{
+  font-family: 'Gotham';
+  color: #fff;
+  margin: 0px;
+  font-size: 13px;
+  font-weight: 100 !important;
+}
+.paragraph--footerCopy::before{
+  content: '© 2021 Viva';
+  font-weight: 600 !important;
+  margin-right: 5px;
+}
+
+.paragraph--footerMenuTitles{
+  font-family: 'Gotham';
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.paragraph--cta_style_2-title::after{
+  content: '';
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: url(/arquivos/check_icon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 86%;
+  z-index: 1;
+  margin-left: 6px;
+  top: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.wrapper--pdpSection-title{
+  font-size: 32px;
+  color: #454545;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-family: 'Gotham';
+  letter-spacing: 0px;
+}
+.paragraph--pdpSection-title{
+  margin-bottom: 0px;
+}
+
+.wrapper--pdpSection-subtitle{
+  font-size: 20px;
+  color: #767676;
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: -32px;
+  font-family: 'Gotham';
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .container--homeBread-message{
+    display: none !important;
+  }
+  .wrapper--homeSection-title{
+    display: block !important;
+    width: 100% !important;
+  }
+  .paragraph--homeSection-title{
+    margin-top: 10px !important;
+    text-align: left !important;
+    font-size: 22px !important;
+    line-height: 24px !important;
+    margin-bottom: 12px !important;
+  }
+  .paragraph--homeSection-subtitle{
+    font-size: 16px !important;
+    margin-bottom: 22px !important;
+    margin-top: -5px !important;
+    line-height: 22px !important;
+  }
+  .container--footervivaleft{
+    display: block !important;
+  }
+  .paragraph--footervivaleft{
+    font-size: 18px !important;
+    opacity: 0.8 !important;
+    margin-top: 38px !important;
+  }
+  .wrapper--footerCopy{
+    text-align: center !important;
+    padding: 10px 24px !important;
+    margin-bottom: 26px !important;
+    padding-bottom: 65px !important;
+  }
+}
+

@@ -1,0 +1,470 @@
+:global(.vtex-account) {
+    padding: 50px 24px 0;
+    position: relative;
+    margin: 40px auto 0;
+    max-width: 100%;
+    width: 1280px;
+}
+
+:global(.vtex-account)>div {
+    padding-top: 146px;
+}
+
+:global(.vtex-pageHeader__container) {
+    padding: 0 2em .5em;
+}
+
+:global(.vtex-pageHeader__container) :global(.c-on-base) {
+    margin-top: 0;
+}
+
+.userInfo {
+    width: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+}
+
+
+
+.userGreeting {
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Gotham';
+    letter-spacing: 0px;
+    color: #454545;
+    font-weight: 100;
+    margin-bottom: -5px;
+}
+
+.userImage{
+    width: 70px;
+    height: 70px;
+    margin-right: 14px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.userImage::before {
+    content: "";
+    background: url(/arquivos/profile-user-new.svg);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.userImage::after {
+    content: "";
+    background: white;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+.userName {
+    text-align: left;
+    font-size: 40px;
+    font-family: Gotham;
+    letter-spacing: 0px;
+    color: #454545;
+}
+
+:global(.vtex-my-account-1-x-menu) {
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 30%;
+}
+
+:global(.vtex-my-account-1-x-menuLinks > div:nth-child(1) > div:nth-child(1)::before) {
+    display: none !important;
+}
+
+.menuLinks {
+    border-right: 1px solid rgba(181, 181, 181, .5);
+    position: relative;
+    top: -8px;
+}
+
+.menu{
+    width: 29%;
+    padding-left: 18px;
+    padding-right: 30px;
+}
+
+
+.menuLinks :global(.vtex-account_menu-link), :global(.vtex-my-account-1-x-menuLink) {
+    text-align: left;
+    letter-spacing: 0px;
+    font-size: 18px;
+    font-family: Gotham;
+    color: #454545;
+    padding: 3px 13px;
+    border: none;
+    position: relative;
+}
+
+:global(.vtex-account_menu-link){
+    padding-left: 0px;
+    margin-left: 22px;
+    padding-right: 0px !important;
+}
+
+
+:global(.b) {
+    color: #812481 !important;
+}
+
+:global(.b::after) {
+    content: '';
+    position: absolute;
+    background-color: #812481;
+    width: 100%;
+    height: 1px;
+    bottom: -5px;
+    left: 0px
+}
+
+:global(.vtex-pageHeader__title) {
+    text-align: left;
+    font-size: 32px;
+    font-family: Gotham;
+    letter-spacing: 0px;
+    color: #454545;
+}
+
+.boxContainer {
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
+}
+
+.dataEntryLabel, .newsletterContainerTitle {
+    text-align: left;
+    font-size: 16px;
+    font-family: Gotham;
+    font-weight: 900;
+    letter-spacing: 0px;
+    color: #454545;
+}
+
+.dataEntryChildren, .newsletterContainerMessage, :global(.vtex-checkbox__label) {
+    text-align: left;
+    font-size: 16px;
+    font-family: Gotham;
+    font-weight: 100;
+    letter-spacing: 0px;
+    color: #454545;
+}
+
+.boxContainerFooter :global(.vtex-button) {
+    font-size: 16px;
+    font-family: Gotham;
+    font-weight: 900;
+    letter-spacing: 0px;
+    color: #812481;
+    text-transform: capitalize;
+}
+
+.boxContainerFooter :global(.vtex-button:hover) {
+    background: #ebebeb;
+}
+
+.boxContainerBody :global(.vtex-input__label) {
+    text-align: left;
+    font-size: 14px;
+    font-family: Gotham;
+    letter-spacing: 0px;
+    color: #454545;
+    font-weight: 300;
+    margin-left: 24px;
+}
+ :global(.vtex-input__label){
+    text-align: left;
+    font-size: 14px;
+    font-family: Gotham;
+    letter-spacing: 0px;
+    color: #454545;
+    font-weight: 300;
+    margin-left: 24px;
+}
+.boxContainerBody :global(.vtex-dropdown__label) {
+    text-align: left;
+    font-size: 14px;
+    font-family: Gotham;
+    letter-spacing: 0px;
+    color: #454545;
+    font-weight: 300;
+    padding-left: 24px;
+}
+
+.boxContainerBody :global(.vtex-button) {
+    background: #802980;
+    border-radius: 10px;
+    font-family: 'Gotham';
+    font-size: 20px;
+    color: white;
+    padding: 12px;
+    border: none;
+    text-transform: capitalize;
+}
+.boxContainerBody :global(.vtex-button__label){
+    padding:0 !important;
+}
+:global(.vtex-button__label:focus){
+    outline: none;
+}
+.boxContainerBody :global(.vtex-button .b--danger .bg-danger) {
+    background: #767676;
+    border-radius: 10px;
+    font-family: 'Gotham';
+    font-size: 20px;
+    color: white;
+    border: none;
+    text-transform: capitalize;
+}
+.boxContainerBody :global(.flex.vtex-input-prefix__group){
+    border: none;
+}
+.boxContainerBody :global(.flex.vtex-input-prefix__group > input:nth-child(1)) {
+    text-align: left;
+    font-size: 14px;
+    font-family: Gotham;
+    letter-spacing: 0px;
+    color: #454545;
+    font-weight: 100;
+    border: 1px solid #812481;
+    padding: 0px 25px;
+    border-radius: 10px;
+    height: 40px;
+}
+.boxContainerBody :global(.vtex-dropdown select) {
+    height: 40px;
+}
+.boxContainerBody :global(.vtex-dropdown .vtex-dropdown__button) {
+    height: 40px;
+}
+
+.boxContainerBody :global(.vtex-dropdown > label > div:last-child) {
+    border: none;
+}
+
+.boxContainerBody :global(.vtex-dropdown__button) {
+    text-align: left;
+    font-size: 14px;
+    font-family: Gotham;
+    letter-spacing: 0px;
+    color: #454545;
+    font-weight: 100;
+    border: 1px solid #812481;
+    border-radius: 10px;
+    padding-left: 24px;
+    height: 54px;
+}
+
+
+.boxContainerBody :global(.vtex-dropdown__button) > div{
+    height: 100%;
+    align-items: center;
+}
+
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper .vtex-button) {
+    background: #ebebeb !important;
+    color: #802980;
+    font-family: Gotham;
+}
+
+:global(.vtex-profile-form-3-x-profileContainer .vtex-button) {
+    background: #802980;
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+    margin: 0;
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+:global(.vtex-pageHeader-link__container .vtex-button ) {
+    color: #464646;
+    font-family: 'Gotham';
+}
+:global(.t-action--small){
+    text-transform: capitalize;
+    font-family: 'Gotham';
+}
+:global(.vtex-pageHeader__children .vtex-button ) {
+    background: #802980;
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+    margin: 0;
+    font-family: Gotham;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+:global(.vtex-account_menu-profile_link)::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-color: #812481;
+    background-image: url(/arquivos/profile_favicon.png);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+    top: -1px;
+    left: -20px;
+}
+:global(.vtex-account_menu-addresses_link)::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-color: #812481;
+    background-image: url(/arquivos/boards_favicon.png);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+    top: -1px;
+    left: -20px;
+}
+:global(.vtex-account_menu-orders_link)::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-color: #812481;
+    background-image: url(/arquivos/history_favicon.png);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+    top: -1px;
+    left: -20px;
+}
+:global(.vtex-account_menu-boards_link)::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-color: #812481;
+    background-image: url(/arquivos/boards_favicon.png);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+    top: -1px;
+    left: -20px;
+}
+:global(.vtex-account_menu-profile_link)::after,
+:global(.vtex-account_menu-addresses_link)::after,
+:global(.vtex-account_menu-orders_link)::after{
+    width: auto !important;
+    right: 0px;
+}
+
+@media (max-width: 1023px){
+    :global(.vtex-account__page-body > .flex){
+        flex-direction: row;
+        display: block;
+    }
+    :global(.vtex-account__page-body > .flex .w-60-ns), :global(.vtex-account__page-body > .flex .w-40-ns){
+        width: 100%;
+    }
+    :global(.vtex-my-account-1-x-menu) {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    :global(.vtex-account) {
+        padding-top: 115px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    :global(.vtex-pageHeader__container){
+        padding: 0px 10px !important;
+    }
+    :global(.vtex-pageHeader__title){
+        text-align: left !important;
+        padding-bottom: 0px !important;
+    }
+    .menu{
+        padding: 10px !important;
+        padding-bottom: 50px !important;
+    }
+    .userGreeting{
+        margin-bottom: 4px !important;
+    }
+    .userImage{
+        width: 60px;
+        height: 60px;
+    }
+    :global(.vtex-pageHeader__children){
+        margin-top: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .userInfo {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        top: 0;
+    }
+    :global(.vtex-account) {
+        padding-top: 0;
+        position: relative;
+        margin-top: 0;
+    }
+    :global(.vtex-account)>div {
+        padding-top: 10px;
+    }
+    .userGreeting, .userName {
+        font-size: 24px;
+    }
+    :global(.vtex-my-account-1-x-menu) {
+        width: 100%;
+    }
+    .menuLinks {
+        border-right: none;
+    }
+    :global(.vtex-pageHeader__title) {
+        font-size: 21px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    :global(.vtex-pageHeader__children){
+        margin: 0 auto;
+    }
+}

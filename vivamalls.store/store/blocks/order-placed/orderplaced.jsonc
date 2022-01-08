@@ -1,0 +1,150 @@
+{
+    "store.orderplaced": {
+        "blocks": [
+            "order-placed", "order-placed-custom"
+        ],
+        "props":{
+            "blockClass": "customPlaceholder"
+        }
+    },
+    "order-placed": {
+        "blocks": ["op-header", "op-order"]
+    },
+    "op-header": {
+        "children": [
+            "op-section#confirmation",
+            "flex-layout.row#textOrderPlace",
+            "op-summary-section",
+            "op-bank-invoice-section"
+        ]
+    },
+    "flex-layout.row#textOrderPlace": {
+        "children": ["rich-text#orderPlacedText"],
+        "props":{
+            "blockClass": "contentTextOrderPlaced"
+        }
+    },
+    "rich-text#orderPlacedText": {
+        "props": {
+          "text": "Tu pedido ha sido recibido. Este ingresará a un proceso de confirmación de medio de pago, inventario disponible e información ingresada. Finalizado este proceso, te notificaremos vía correo electrónico el estatus de tu pedido. En caso de ser exitoso, procederemos con el proceso de entrega según la opción escogida: Envío o Recogida en Tienda.",
+          "blockClass": "orderPlacedFrontText"
+        }
+    },
+
+    "op-section#confirmation": {
+        "props": {
+            "name": "confirmation",
+            "marginBottom": 9,
+            "borderless": true
+        },
+        "children": [
+            "flex-layout.row#confirmation-texts"
+        ]
+    },
+    "flex-layout.row#confirmation-texts": {
+        "children": [
+            "flex-layout.col#confirmation-icon",
+            "flex-layout.col#confirmation-content"
+        ]
+    },
+    "flex-layout.col#confirmation-icon": {
+        "children": [
+            "op-confirmation-icon"
+        ],
+        "props": {
+            "width": "20%",
+            "verticalAlign": "middle",
+            "horizontalAlign": "right"
+        }
+    },
+    "flex-layout.col#confirmation-content": {
+        "children": [
+            "op-confirmation-title",
+            "op-confirmation-message"
+        ],
+        "props": {
+            "width": "80%",
+            "verticalAlign": "middle",
+            "horizontalAlign": "left"
+        }
+    },
+    // each order section
+    "op-order": {
+        "children": [
+            "flex-layout.row#order-header",
+            "op-order-split-notice",
+            "op-order-customer",
+            "op-section#payments",
+            "op-section#pickup-packages",
+            "op-section#delivery-packages",
+            "op-order-takeaway-packages",
+            "op-order-total",
+            "link#go-to-page"
+        ]
+    },
+
+    "link#go-to-page": {
+        "props": {
+          "href": "/",
+          "label": "Regresar al website",
+          "blockClass": "restoreToSite"
+        }
+    },
+
+    // each order header
+    "flex-layout.row#order-header": {
+        "props": {
+            "fullWidth": true,
+            "colSizing": "auto",
+            "colGap": 5,
+            "marginBottom": 5,
+            "blockClass": "headerinfoData"
+        },
+        "children": [
+            "flex-layout.col#order-header-info",
+            "flex-layout.col#order-header-options"
+        ]
+    },
+    "flex-layout.col#order-header-info": {
+        "children": ["op-order-number"]
+    },
+    
+    "flex-layout.col#order-header-options": {
+        "children": ["responsive-layout.desktop#order-options-desktop"]
+    },
+    "responsive-layout.desktop#order-options-desktop": {
+        "children": ["op-order-options"]
+    },
+    // payment section
+    "op-section#payments": {
+        "props": {
+            "name": "paymentMethods"
+        },
+        "children": [
+            "op-order-payment",
+            "responsive-layout.mobile#order-options-mobile"
+        ]
+    },
+    // bottom of top section of order header
+    "responsive-layout.mobile#order-options-mobile": {
+        "children": ["op-order-options#mobile"]
+    },
+    "op-order-options#mobile": {
+        "props": {
+            "blockClass": "mobile",
+            "fullWidth": true
+        }
+    },
+    "op-section#pickup-packages": {
+        "props": {
+            "name": "pickupPackages"
+        },
+        "children": ["op-order-pickup-packages"]
+    },
+    "op-section#delivery-packages": {
+        "props": {
+            "name": "deliveryPackages"
+        },
+        "children": ["op-order-delivery-packages"]
+    }
+}

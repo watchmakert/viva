@@ -1,0 +1,157 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    },
+    "children": ["search-bar#custom"]
+  },
+
+  "search-bar#custom":{
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "placeholder": "Buscar",
+      "openAutocompleteOnFocus": true,
+      "productLayout": "VERTICAL"
+    }
+  },
+  "autocomplete-result-list.v2":{
+    "blocks": ["product-summary"]
+  },
+  "flex-layout.col#ourStores": {
+    "props": {
+      "width": "grow"
+    },
+    "children": ["link#ourStores"]
+  },
+  "link#ourStores": {
+    "props": {
+      "href": "/nuestras-tiendas",
+      "label": "Nuestras tiendas",
+      "blockClass": "linkOurStores"
+    }
+  },
+  
+
+
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop", "flex-layout.row#desktopSubMenu", "crea-con-viva-user-info", "crea-con-viva-board-buttons", "crea-con-viva-float-buttons"]
+  },
+
+
+  "flex-layout.row#desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "drawer-viva",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#ourStores",
+      "flex-layout.col#spacer",
+      "chef-with-icon#login",
+      "minicart-viva"
+    ]
+  },
+  "flex-layout.row#desktopSubMenu": {
+    "props": {
+      "blockClass": "main-subheader",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.row#desktopExtraMenu"]
+  },
+
+  "flex-layout.row#desktopExtraMenu": {
+    "props": {
+      "blockClass": "main-extraMenu",
+      "preserveLayoutOnMobile": true,
+      "fullWidth": false
+    },
+    "children": ["vtex.menu@2.x:menu#extramenu"]
+  },
+
+  "vtex.menu@2.x:menu#extramenu": {
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "linksExtramenu",
+      "fullWidth": false
+    }
+  },
+
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/logo.png",
+      "width": "72"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile", "crea-con-viva-user-info", "crea-con-viva-float-buttons"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer#menu-mobile",
+      "drawer-viva",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "minicart-viva"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "70"
+    }
+  },
+
+  "chef-with-icon#login": {
+    "props": {
+      "id": "hpa-account",
+      "blockClass": "login",
+      "size": 24
+    },
+    "children": ["login#custom"]
+  }
+
+
+
+}

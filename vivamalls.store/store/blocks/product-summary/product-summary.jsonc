@@ -1,0 +1,80 @@
+{
+
+    "with-add-to-cart-manager#summary": {
+      "children": ["buy-button-controller", "isobar-quantity-selector-default"]
+    },
+    "product-list-price#summary": {
+      "props": {
+        "blockClass": "summary"
+      }
+    },
+    "flex-layout.row#selling-price-savings": {
+      "props": {
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4
+      },
+      "children": [
+        "product-selling-price#summary",
+        "product-price-savings#summary"
+      ]
+    },
+    "product-selling-price#summary": {
+      "props": {
+        "blockClass": "summary"
+      }
+    },
+    "product-price-savings#summary": {
+      "props": {
+        "markers": [
+          "discount"
+        ],
+        "blockClass": "summary"
+      }
+    },
+
+    
+    "product-summary-image#shelf": {
+      "props": {
+        "showBadge": false,
+        "aspectRatio": "1:1",
+        "maxHeight": 300
+      }
+    },
+    "rich-text#not-found": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "**PAGE NOT FOUND**",
+        "font": "t-heading-1"
+      }
+    },
+    "buy-button-controller": {
+      "children": ["add-to-cart-button"]
+    },
+    "isobar-sku-selector-summary": {
+      "props": {
+        "visibleVariations": ["Color"],
+        "showVariationsLabels": false,
+        "maxItemsPerProduct": 5,
+        "order": true
+      }
+    },
+   "vtex.product-highlights@2.x:product-highlights": {
+      "children": ["product-highlight-text"],
+      "props": {
+        "type": "collection",
+        "filter": {
+          "type": "show",
+          "highlightNames": ["Nuevo", "Más vendidos"]
+        }
+      }
+    },
+    "product-highlight-text": {
+      "props": {
+        "message": "{highlightName}",
+        "blockClass" :"nuevo-vendido"
+      }
+    }
+}

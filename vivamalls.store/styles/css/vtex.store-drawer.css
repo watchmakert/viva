@@ -1,0 +1,100 @@
+.openIconContainer--secondary-mobile-menu{
+    background-image: url(https://implementation--vivamalls.myvtex.com/arquivos/menu_mobile_btn.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 14px;
+    width: 36px;
+    height: 36px;
+    left: 0;
+    font-size: 0;
+    margin-left: 4px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .drawer{
+        width: 300px !important;
+        top: 65px;
+        padding-top: 14px;
+    }
+    .overlay{
+        top: 65px;
+        background-color: #000000;
+    }
+    .closeIconContainer{
+        position: absolute;
+        top: -60px;
+        background: #fff;
+        left: 0px;
+        width: 45px;
+        height: 45px;
+    }
+    .closeIconContainer .closeIconButton{
+        padding: 13px;
+    }
+    .childrenContainer--secondary-mobile-menu{
+        display: block;
+        width: 100%;
+    }
+    .childrenContainer--secondary-mobile-menu :global(.vtex-flex-layout-0-x-flexCol){
+        width: 260px;
+        margin-left: 18px;
+        display: block;
+        padding: 15px 14px;
+        border-bottom: 1px solid #e4e4e4;
+        color: #B7B7B7;
+    }
+    .childrenContainer--secondary-mobile-menu :global(.vtex-store-link-0-x-link--linkOurStores){
+        position: relative;
+        height: auto;
+        padding-left: 32px;
+    }
+    .childrenContainer--secondary-mobile-menu :global(.vtex-store-link-0-x-link--linkOurStores)::before{
+        width: 25px;
+        height: 25px;
+        top: -4px;
+        opacity: 0.5;
+    }
+    .childrenContainer--secondary-mobile-menu :global(.vtex-store-link-0-x-label--linkOurStores){
+        color: #B7B7B7;
+    }
+    .childrenContainer--secondary-mobile-menu :global(.vtex-store-link-0-x-label--linkOurStores):hover{
+        color: #F48898;
+    }
+
+    .childrenContainer--secondary-mobile-menu :global(.vtex-flex-layout-0-x-flexRow--main-subheader){
+        height: auto;
+        background: #fff;
+    }
+    .childrenContainer--secondary-mobile-menu :global(.vtex-menu-2-x-menuContainerNav--linksExtramenu){
+        display: block;
+        float: none;
+        margin: 0 auto;
+        right: auto !important;
+        left: auto !important;
+        text-align: left;
+    }
+    .childrenContainer--secondary-mobile-menu :global(.vtex-menu-2-x-menuItem--linksExtramenu){
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #e4e4e4;
+    }
+
+
+    .childrenContainer--secondary-mobile-menu :global(.vtex-menu-2-x-styledLinkContainer--linksExtramenu){
+        margin: 0px !important;
+    }
+    .childrenContainer--secondary-mobile-menu :global(.vtex-menu-2-x-styledLink--linksExtramenu){
+        padding: 15px 14px;
+    }
+    .childrenContainer--secondary-mobile-menu :global(.vtex-menu-2-x-styledLinkContent--linksExtramenu){
+        color: #B7B7B7;
+    }
+    .childrenContainer--secondary-mobile-menu :global(.vtex-menu-2-x-styledLinkContent--linksExtramenu):hover{
+        color: #F48898;
+    }
+
+}
+  
+  

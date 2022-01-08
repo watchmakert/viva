@@ -1,0 +1,196 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+}
+
+.nameContainer {
+  justify-content: start;
+  padding-top: 12px;
+  padding-bottom: 18px;
+  margin-bottom: 15px;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2E2E2E;
+}
+
+.container {
+  text-align: start;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  border-radius: 0.25rem;
+}
+
+.containerNormal{
+  max-width: 100% !important;
+  width: 100% !important;
+  position: relative;
+  padding: 8px;
+}
+
+.element{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-bottom: 10px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  border-radius: 22px;
+  border: 1px solid rgb(240, 240, 240);
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow:    0px 1px 6px 0px rgba(50, 50, 50, 0.15);
+  box-shadow:         0px 1px 6px 0px rgba(50, 50, 50, 0.15);
+}
+
+.imageStackContainer{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 992px) {
+  .imageStackContainer{
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+}
+.imageStackContainer::after{
+  content: '';
+  background: url(/arquivos/hover_shelf_2.png);
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  bottom: 0px;
+  z-index: 2;
+  opacity: 1;
+}
+@media only screen and (max-width: 992px) {
+  .imageStackContainer::after{
+    opacity: 0.7;
+  }
+}
+
+
+.image{
+  width: 100% !important;
+  object-fit: cover !important;
+  max-height: 100% !important;
+  height: auto !important;
+  margin-bottom: -3px;
+  height: 345px !important;
+}
+@media only screen and (max-width: 1400px) {
+  .image{
+    height: 322px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .image{
+    height: 180px!important;
+  }
+}
+
+
+.element :global(.vtex-button){
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  outline: 0px !important;
+  background: #0193a9 !important;
+  border: 0px !important;
+  background-image: url(/arquivos/add_to_cart_category.png) !important;
+  background-position: center center !important;
+  background-size: 90% !important;
+  background-repeat: no-repeat !important;
+}
+
+
+.productBrand{
+  font-size: 19px;
+  font-family: 'Gotham';
+  padding: 0 10px;
+  color: #5a5a5a;
+  padding-right: 26px;
+  display: block;
+  padding-left: 26px;
+  line-height: 24px;
+  overflow: hidden;
+  height: auto;
+  max-height: 45px;
+  min-height: 45px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.productBrandContainer{
+  font-family: 'Gotham';
+  color: #fff;
+  position: relative;
+  height: 0px;
+  top: -30px;
+  left: 18px;
+  z-index: 2;
+  font-size: 12px;
+}
+
+/* responsive */
+@media only screen and (max-width: 992px) {
+  .nameContainer{
+    padding-top: 12px;
+    padding-bottom: 16px;
+    height: auto !important;
+  }
+  .productBrand{
+    font-size: 13px;
+    padding: 0 10px;
+    padding-right: 14px;
+    padding-left: 14px;
+    line-height: 16px;
+    overflow: visible;
+    height: auto;
+    max-height: 20px;
+    min-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+}

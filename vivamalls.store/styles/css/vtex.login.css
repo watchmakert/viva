@@ -1,0 +1,366 @@
+.box{
+    right: 0px;
+    left: -490px !important;
+    margin: auto;
+    width: 700px;
+    position: absolute;
+    top: 15px;
+}
+.arrowUp{
+    right: 15px;
+}
+
+.content{
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.optionsSticky{
+    padding-left: 18px;
+    padding-right: 8px;
+}
+
+.optionsSticky :global(.vtex-button),
+.formFooter :global(.vtex-button){
+    height: auto;
+    padding: 10px 9px;
+    font-size: 13px;
+    display: block;
+    width: 100%;
+}
+
+.profile{
+    font-family: 'Gotham';
+    position: relative;
+    overflow: inherit;
+    padding: 12px;
+}
+.profile::before{
+    content: "";
+    background: url('/arquivos/profile-user.svg');
+    position: absolute;
+    left: 0px;
+    display: block;
+    width: 16px;
+    height: 18px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.profile::after{
+    display: none !important;
+}
+
+.contentForm{
+    border-left: 1px solid #dadada;
+    margin-left: 25px;
+    padding: 0 30px;
+}
+
+.formTitle{
+    font-family: 'Gotham' !important;
+    font-size: 13px !important;
+    line-height: 16px !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    color: gray !important;
+    padding: 0px !important;
+}
+.label{
+    font-family: 'Gotham' !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+.accessCodeOptionBtn > button, .emailPasswordOptionBtn > button, .sendButton > button{
+    border-radius: 10px;
+    background: #802980;
+    color: white;
+    text-transform: initial;
+    font-family: 'Gotham';
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    border:none;
+}
+.accessCodeOptionBtn > button:hover, .accessCodeOptionBtn > button:focus, .emailPasswordOptionBtn > button:hover, .sendButton > button:hover, .sendButton > button:active, .sendButton > button:focus{
+    background: #871E80;
+    color: white;
+}
+.formLinkContainer > a, .backButton > button{
+    font-family: 'Gotham';
+    font-size: 14px;
+    font-weight: 100;
+    color: #454545 !important;
+    outline: none;
+    border: none;
+}
+.formLinkContainer > a:hover, .backButton > button:hover{
+    text-decoration: underline;
+    background: none;
+}
+.formError{
+    font-family: 'Gotham';
+    color: #dc3545;
+}
+input::placeholder{
+    font-family: 'Gotham';
+    font-weight: 100;
+}
+.inputContainerAccessCode > input::placeholder{
+    font-family: 'Gotham';
+}
+button:focus {
+    outline: none;
+}
+
+.button{
+    font-size: 15px;
+    color: #6c6c6c;
+    font-weight: 500;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: -3px;
+}
+.vtex-button:hover{
+    background-color: transparent;
+}
+.button, .button > span.t-action--small{
+    font-size: 15px;
+    color: #6c6c6c;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+.button:hover{
+    color: #812481;
+}
+
+.accountOptions :global(.vtex-button:hover), .accountOptions :global(.vtex-button:focus) {
+    background-color: transparent;
+    color:#812481;
+}
+.content{
+    box-shadow: 2px 2px 4px 2px rgb(0 0 0 / 20%);
+}
+.content--accountOptions{
+    width: 50%;
+    transform: translateX(178px);
+    box-shadow: 2px 2px 4px 2px rgb(0 0 0 / 20%);
+}
+.contentContainer{
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 992px){
+    .contentAlwaysWithOptions{
+        flex-direction: column;
+    }
+}
+
+.headNoLogin{
+    font-family: 'Gotham' !important;
+    font-size: 30px;
+    color: rgb(33,33,33);
+    margin-top: 32px;
+    margin-bottom: 0px;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+.subheadNoLogin{
+    font-family: 'Gotham' !important;
+    color: rgb(165,165,165);
+    font-weight: 600;
+    font-size: 12px;
+    margin: 8px 0px;
+}
+
+.portalContainerOnModal .portalContainer{
+    opacity: 0;
+    display: none;
+}
+.portalContainerOnModalActive{
+    position: relative !important;
+}
+.portalContainerOnModalActive :global(.flex.justify-start){
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    display: block !important;
+}
+
+.portalContainerOnModalActive :global(.flex.justify-start .absolute){
+    position: relative !important;
+}
+
+.portalContainerOnModalActive :global(.vtex-login-2-x-box){
+    right: auto !important;
+    position: relative !important;
+    left: auto !important;
+    width: 100% !important;
+    top: 0px !important;
+}
+
+.portalContainerOnModalActive :global(.vtex-login-2-x-arrowUp){
+    display: none !important;
+}
+
+.portalContainerOnModalActive :global(.vtex-login-2-x-contentContainer){
+    margin-top: 0px !important;
+}
+
+.portalContainerOnModalActive :global(.vtex-login-2-x-content){
+    padding: 0px !important;
+    width: 100% !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow:    none !important;
+    box-shadow:         none !important;
+}
+
+.portalContainerOnModalActive :global(.vtex-login-2-x-contentForm){
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px !important;
+}
+
+.portalContainerOnModalActive :global(.vtex-login-2-x-options){
+    z-index: 3;
+    position: absolute;
+    top: 170px;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+}
+.portalContainerOnModalActive :global(.vtex-login-2-x-optionsListItem):first-child{
+    display: none !important;
+}
+
+.portalContainerOnModalActive :global(.vtex-styleguide-9-x-input),
+:global(.vtex-store__template) :global(.vtex-styleguide-9-x-input){
+    border: 1px solid #A1A1A1;
+    outline: 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.portalContainerOnModalActive :global(.vtex-login-2-x-sendButton .vtex-button),
+:global(.vtex-store__template) :global(.vtex-login-2-x-sendButton .vtex-button){
+    height: 41px;
+}
+
+.portalContainerOnModalActive :global(.vtex-input-prefix__group),
+:global(.vtex-store__template) :global(.vtex-input-prefix__group){
+    border: 0px;
+    border-color: transparent;
+    outline: 0px !important;
+}
+.portalContainerOnModalActive :global(.vtex-login-2-x-formFooter){
+    margin-top: 0px !important;
+    padding-top: 8px !important;
+}
+
+
+:global(.vtex-store__template) .content{
+    margin-top: 50px;
+    min-height: 550px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 40px;
+    position: relative;
+    padding: 0px;
+    width: 360px;
+}
+
+:global(.vtex-store__template) .loginOptionsContainer{
+    position: absolute;
+}
+:global(.vtex-store__template) .loginOptionsContainer{
+    top: 280px;
+}
+
+:global(.vtex-store__template) .content--emailVerification .loginOptionsContainer{
+    top: 180px;
+}
+:global(.vtex-store__template) .content--emailVerification .emailAndPassword{
+    top: 300px;
+}
+:global(.vtex-store__template) .content--codeConfirmation .loginOptionsContainer{
+    top: 190px;
+}
+:global(.vtex-store__template) .contentForm{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+:global(.vtex-store__template) .loginOptionsContainer .options{
+    padding: 0;
+}
+:global(.vtex-store__template) .loginOptionsContainer{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+:global(.vtex-store__template) :global(.vtex-input__suffix){
+    position: absolute;
+    right: 1px;
+    top: 12px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .content{
+        display: block;
+        flex: none;
+        margin-top: 100px;
+        -webkit-box-shadow: 0px 0px 0px 0px transparent !important;
+        -moz-box-shadow:    0px 0px 0px 0px transparent !important;
+        box-shadow:         0px 0px 0px 0px transparent !important;
+        border: 0px !important;
+    }
+    .optionsSticky{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .contentForm{
+        border-left: 0px;
+        margin-left: 0px;
+        padding: 0 5px;
+        margin-top: 22px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    :global(.vtex-store__template) .content{
+        margin-top: 50px;
+        min-height: 550px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        margin-bottom: 40px;
+        position: relative;
+        padding: 0px;
+        width: 360px;
+        margin-top: 150px;
+    }
+}

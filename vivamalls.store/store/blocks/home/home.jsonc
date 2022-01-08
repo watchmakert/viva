@@ -1,0 +1,171 @@
+{
+  "store.home": {
+    "blocks": [
+      "livestreaming",
+      "crea-con-viva-primary-slider",
+      "crea-con-viva-grid-boards",
+      "crea-con-viva-tutorial",
+      "crea-con-viva-slider-products",
+      "crea-con-viva-slider-width-products"
+    ]
+  },
+  "crea-con-viva-grid-boards":{
+    "props": {
+      "target": "fromHome",
+      "visible": "recent"
+    }
+  },
+
+  "crea-con-viva-slider-products":{
+    "children": ["list-context.product-list#home1"]
+  },
+  "crea-con-viva-slider-products#1":{
+    "children": ["list-context.product-list#compra1"]
+  },
+  "crea-con-viva-slider-products#2":{
+    "children": ["list-context.product-list#compra2"]
+  },
+  "crea-con-viva-slider-products#3":{
+    "children": ["list-context.product-list#compra3"]
+  },
+  "crea-con-viva-slider-products#4":{
+    "children": ["list-context.product-list#compra4"]
+  },
+
+
+  "list-context.product-list#home1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "siteVitrinesSlider"
+    }
+  },
+  "list-context.product-list#compra1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "siteVitrinesSlider"
+    }
+  },
+  "list-context.product-list#compra2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "siteVitrinesSlider"
+    }
+  },
+  "list-context.product-list#compra3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "siteVitrinesSlider"
+    }
+  },
+  "list-context.product-list#compra4": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#home-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "siteVitrinesSlider"
+    }
+  },
+
+
+  "slider-layout#home-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+
+  "flex-layout.row#homeHead": {
+    "children": [
+      "rich-text#home"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": false,
+      "blockClass": "homeBread"
+    }
+  },
+
+  "rich-text#home": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Inicio /",
+      "blockClass": "homeBread-message"
+    }
+  },
+
+  "list-context.image-list#primary": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://vivamalls.vteximg.com.br/arquivos/banner_desktop_dummy.png",
+          "mobileImage": "https://vivamalls.vteximg.com.br/arquivos/banner_mobile_dummy.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+    "flex-layout.row#home_section_1": {
+        "children": [
+          "flex-layout.row#home_section_titles_1"
+        ],
+        "props": {
+          "preserveLayoutOnMobile": true,
+          "fullWidth": false,
+          "blockClass": "homeSection-type-1"
+        }
+    },
+    "flex-layout.row#home_section_2": {
+        "children": [
+          "flex-layout.row#home_section_titles_2"
+        ],
+        "props": {
+          "preserveLayoutOnMobile": true,
+          "fullWidth": false,
+          "blockClass": "homeSection-type-2"
+        }
+    },
+    "flex-layout.row#home_section_3": {
+      "children": [
+        "flex-layout.row#home_section_titles_3"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-1"
+      }
+    },
+    "flex-layout.row#home_section_4": {
+      "children": [
+        "flex-layout.row#home_section_titles_4"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-2"
+      }
+    },
+
+
+
+    "flex-layout.row#home_section_titles_1": {
+      "children": [
+        "rich-text#home_section_title",
+        "flex-layout.row#home_section_ctas"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-titles"
+      }
+    },
+    "flex-layout.row#home_section_titles_2": {
+      "children": [
+        "rich-text#home_section_title",
+        "rich-text#home_section_subtitle",
+        "flex-layout.row#home_section_vitrine"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-titles"
+      }
+    },
+    "flex-layout.row#home_section_titles_3": {
+      "children": [
+        "rich-text#home_section_title",
+        "rich-text#home_section_subtitle",
+        "responsive-layout.desktop#marcas-desktop",
+        "responsive-layout.phone#marcas-tablet",
+        "flex-layout.row#home_section_ctas_single",
+        "flex-layout.row#home_section_ctas_single_mobile"
+      ],
+      "props": {
+        "fullWidth": false,
+        "blockClass": "homeSection-type-titles"
+      }
+    },
+    "flex-layout.row#home_section_titles_4": {
+      "children": [
+        "rich-text#home_section_title",
+        "rich-text#home_section_subtitle",
+        "flex-layout.row#home_section_vitrine"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-titles"
+      }
+    },
+    
+
+
+    "rich-text#home_section_title": {
+        "props": {
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "text": "Titulo seccion",
+          "blockClass": "homeSection-title"
+        }
+    },
+    "rich-text#home_section_subtitle": {
+      "props": {
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "text": "Subtitulo seccion",
+        "blockClass": "homeSection-subtitle"
+      }
+    },
+    "image#cta_1": {
+      "props": {
+        "src": "https://via.placeholder.com/382x361",
+        "link": "/"
+      }
+    },
+    "image#cta_2": {
+      "props": {
+        "src": "https://via.placeholder.com/382x361",
+        "link": "/"
+      }
+    },
+    "image#cta_3": {
+      "props": {
+        "src": "https://via.placeholder.com/382x361",
+        "link": "/"
+      }
+    },
+
+    "flex-layout.row#home_section_ctas": {
+      "children": [
+        "image#cta_1",
+        "image#cta_2",
+        "image#cta_3"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-ctas"
+      }
+    },
+    "flex-layout.row#home_section_ctas_2": {
+      "children": [
+        "flex-layout.col#image_cta",
+        "flex-layout.col#image_cta_2",
+        "flex-layout.col#image_cta_3"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-ctas-type-2"
+      }
+    },
+
+
+    "responsive-layout.desktop#marcas-desktop":{
+      "children": ["flex-layout.row#home_section_ctas_2"]
+    },
+    "responsive-layout.phone#marcas-tablet":{
+      "children": [
+        "slider-layout#marcas-slider"
+      ]
+    },
+    "slider-layout#marcas-slider":{
+      "props": {
+        "itemsPerPage": {
+          "phone": 2
+        },
+        "infinite": false,
+        "usePagination": false,
+        "fullWidth": true,
+        "blockClass": "marcas-slider-mobile"
+      },
+      "children": [
+        "image#marca_1",
+        "image#marca_2",
+        "image#marca_3"
+      ]
+    },
+    "image#marca_1": {
+      "props": {
+        "src": "https://via.placeholder.com/180x220",
+        "link": "/",
+        "title": "Titulo"
+      }
+    },
+    "image#marca_2": {
+      "props": {
+        "src": "https://via.placeholder.com/180x220",
+        "link": "/"
+      }
+    },
+     "image#marca_3": {
+      "props": {
+        "src": "https://via.placeholder.com/180x220",
+        "link": "/"
+      }
+    },
+
+
+
+    "flex-layout.row#home_section_ctas_single": {
+      "children": [
+        "image#cta_1"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-ctas-noborder"
+      }
+    },
+    "flex-layout.row#home_section_ctas_single_mobile": {
+      "children": [
+        "image#cta_1"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-ctas-noborder-mobile"
+      }
+    },
+
+  
+    "flex-layout.col#image_cta": {
+      "children": [
+        "image#cta_1",
+        "rich-text#cta_label",
+        "link#cta_link"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-ctas-type-2-inside"
+      }
+    },
+    "flex-layout.col#image_cta_2": {
+      "children": [
+        "image#cta_2",
+        "rich-text#cta_label",
+        "link#cta_link"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-ctas-type-2-inside"
+      }
+    },
+    "flex-layout.col#image_cta_3": {
+      "children": [
+        "image#cta_3",
+        "rich-text#cta_label",
+        "link#cta_link"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-ctas-type-2-inside"
+      }
+    },
+
+
+
+
+    "rich-text#cta_label": {
+      "props": {
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "text": "Titulo",
+        "blockClass": "cta_style_2-title"
+      }
+    },
+    "link#cta_link": {
+      "props": {
+        "href": "/",
+        "label": "Ver marca",
+        "blockClass": "linkCta_style_2"
+      }
+    },
+
+
+
+
+    "flex-layout.row#home_section_vitrine": {
+      "children": [
+        "flex-layout.row#shelf"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": false,
+        "blockClass": "homeSection-type-ctas"
+      }
+    },
+    "flex-layout.row#shelf": {
+      "children": ["list-context.product-list#demo1"]
+    },
+    "list-context.product-list#demo1": {
+      "blocks": ["product-summary.shelf"],
+      "children": ["slider-layout#demo-products"],
+      "props": {
+        "orderBy": "OrderByTopSaleDESC",
+        "maxItems": 4
+      }
+    },
+    "slider-layout#demo-products": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 4,
+          "phone": 2
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf"
+      }
+    }
+
+    
+}

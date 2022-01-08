@@ -1,0 +1,7 @@
+{
+    "stack-layout#prodsum": {
+        "children": [
+          "product-summary-image#shelf"
+        ]
+      }
+}

@@ -1,0 +1,15 @@
+.popup{
+    background: #812481 !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.popup :global(.vtex-add-to-cart-button-0-x-tooltipLabelText){
+    font-size: 0px;
+}
+
+.popup :global(.vtex-add-to-cart-button-0-x-tooltipLabelText)::before{
+    font-size: 14px;
+    content: 'Selecciona una talla y un color';
+}

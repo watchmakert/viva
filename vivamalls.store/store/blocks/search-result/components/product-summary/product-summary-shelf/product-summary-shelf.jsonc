@@ -1,0 +1,103 @@
+{
+    "product-summary.shelf": {
+        "children": [
+          "crea-con-viva-summary-top-content",
+          "crea-con-viva-summary-title",
+          "isobar-sku-selector-summary",
+          "crea-con-viva-summary-prices",
+          "with-add-to-cart-manager#summary"
+        ],
+        "props":{
+          "blockClass": "productVitrineItem"
+        }
+      },
+      "with-add-to-cart-manager#summary": {
+        "children": ["buy-button-controller", "isobar-quantity-selector-default"]
+      },
+      "product-summary-image#shelf": {
+        "props": {
+          "showBadge": false,
+          "aspectRatio": "1:1",
+          "maxHeight": 300
+        }
+      },
+      "rich-text#not-found": {
+        "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "**PAGE NOT FOUND**",
+          "font": "t-heading-1"
+        }
+      },
+      "buy-button-controller": {
+        "children": ["add-to-cart-button"]
+      },
+      "isobar-sku-selector-summary": {
+        "props": {
+          "visibleVariations": ["Color"],
+          "showVariationsLabels": false,
+          "maxItemsPerProduct": 5,
+          "order": true
+        }
+      },
+     "vtex.product-highlights@2.x:product-highlights": {
+        "children": ["product-highlight-text"],
+        "props": {
+          "type": "collection",
+          "filter": {
+            "type": "show",
+            "highlightNames": ["Nuevo", "Más vendidos"]
+          }
+        }
+      },
+      "product-highlight-text": {
+        "props": {
+          "message": "{highlightName}",
+          "blockClass" :"nuevo-vendido"
+        }
+      },
+      "vtex.product-highlights@2.x:product-highlights#colection-search": {
+        "props": {
+          "type": "collection",
+          "filter": {
+            "type": "show",
+            "highlightNames": ["Oferta Online"]
+          }
+        },
+        "children": ["product-highlight-wrapper#colection-search"]
+      },
+      "product-highlight-wrapper#colection-search":{
+        "children":["product-highlight-text#colection-search"],
+        "props":{
+          "blockClass":"bandera-oferta-search"
+        }
+      },
+      "product-highlight-text#colection-search": {
+        "props": {
+          "message": "Oferta Online",
+          "blockClass": "boleto"
+        }
+      },
+      "vtex.product-highlights@2.x:product-highlights#flash-search": {
+        "props": {
+          "type": "collection",
+          "filter": {
+            "type": "show",
+            "highlightNames": ["FLASH SALE"]
+          }
+        },
+        "children": ["product-highlight-wrapper#flash-search"]
+      },
+      "product-highlight-wrapper#flash-search":{
+        "children":["product-highlight-text#flash-search"],
+        "props":{
+          "blockClass":"bandera-flash-search"
+        }
+      },
+      "product-highlight-text#flash-search": {
+        "props": {
+          "message": "Flash Sale ⚡",
+          "blockClass": "boleto"
+        }
+      }
+}

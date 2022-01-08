@@ -1,0 +1,93 @@
+{
+    "drawer#menu-mobile":{
+        "children": [
+            "flex-layout.row#accountMenu",
+            "flex-layout.col#ourStores",
+            "flex-layout.row#desktopSubMenu",
+            "chef-with-icon#login"
+        ],
+        "blocks": ["drawer-trigger"],
+        "props": {
+            "blockClass": "secondary-mobile-menu"
+        }
+    },
+
+
+    "flex-layout.row#accountMenu": {
+        "children": [
+            "menu-account-mobile"
+        ],
+        "props": {
+          "preserveLayoutOnMobile": true,
+          "fullWidth": true,
+          "blockClass": "itemMenuMobile"
+        }
+    },
+
+
+    "flex-layout.row#individualItemsMenu": {
+        "children": [
+          "flex-layout.row#desktopSubMenu"
+        ],
+        "props": {
+          "preserveLayoutOnMobile": true,
+          "fullWidth": true,
+          "blockClass": "individualItemsMenu"
+        }
+    },
+
+    
+
+
+
+
+    "menu#drawer-menu": {
+        "children": [
+          "menu-item#category"
+        ],
+        "props": {
+          "orientation": "vertical"
+        }
+    },
+
+    "menu-item#category": {
+        "props": {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Shop",
+            "text": "Shop"
+          },
+          "iconProps": {
+            "id": "bnd-logo",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "rebel-pink",
+            "mutedClassName": "c-action-primary"
+          },
+          "iconToTheRight": true
+        }
+    },
+    
+
+
+
+    "drawer-trigger": {
+        "children": ["rich-text#open-drawer"]
+    },
+    "rich-text#open-drawer": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Abrir",
+            "blockClass": "triggerMenuMobile"
+        }
+    }
+
+
+
+}

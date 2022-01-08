@@ -1,0 +1,248 @@
+.biggy-autocomplete{
+    margin-top: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+    padding: 15px !important;
+    width: 900px;
+    left: -225px;
+    display: block;
+    overflow: hidden;
+    
+}
+.biggy-js-container--hidden{
+    visibility: hidden;
+}
+@media only screen and (max-width: 992px) {
+    .biggy-autocomplete{
+        left: 0px !important;
+        right: 0px !important;
+        width: 90% !important;
+        position: fixed !important;
+        margin: auto !important;
+        margin-top: 15px !important;
+    }
+}
+
+
+.itemList{
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+}
+.tileList{
+    width: 72%;
+    display: inline-block;
+    vertical-align: top;
+}
+.tileListList{
+    position: relative;
+}
+
+.tileListList .tileListItem{
+    display: inline-block !important;
+    width: 33% !important;
+    vertical-align: top !important;
+    height: auto !important;
+    margin-bottom: 0px !important;
+    max-width: 33%;
+}
+
+
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-imageContainer){
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.tileListList .tileListItem :global(.vtex-store-components-3-x-discountContainer){
+    width: auto !important;
+    height: auto !important;
+}
+
+
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-priceContainer){
+    padding: 0;
+    text-align: left;
+    display: block;
+}
+.tileListList .tileListItem :global(.vtex-store-components-3-x-sellingPrice){
+    font-size: 17px;
+    font-weight: bold;
+    color: #777777;
+    font-family: 'Gotham';
+    margin-top: 0px;
+}
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-currencyCode){
+    margin-right: -4px;
+}
+.tileListList .tileListItem :global(.vtex-store-components-3-x-installmentsPrice){
+    display: none !important;
+}
+
+
+
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-buyButtonContainer){
+    padding: 0;
+    text-align: right;
+    display: block;
+    height: 0;
+    position: relative;
+    margin-top: 5px;
+}
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-priceContainer){
+    margin-top: 14px;
+}
+
+.tileListList .tileListItem :global(.vtex-button){
+    font-size: 0px !important;
+    width: 45px;
+    height: 45px;
+    right: 15px;
+    bottom: 15px;
+    position: absolute;
+
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    outline: 0px !important;
+    background: #454545;
+    border: 0px !important;
+    background-image: url(/arquivos/add_to_cart_category.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.tileListList .tileListItem :global(.vtex-button):hover{
+    opacity: 0.8;
+}
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-priceContainer){
+
+}
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-priceContainer){
+
+}
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-priceContainer){
+
+}
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-priceContainer){
+
+}
+
+
+
+
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-nameContainer){
+    justify-content: start;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: auto !important;
+    margin-bottom: 5px;
+    overflow: hidden;
+    margin-top: 8px;
+    margin-bottom: 0px !important;
+}
+
+
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-imageNormal){
+    max-width: 100%!important;
+    max-height: 100%!important;
+    width: auto!important;
+    height: 180px!important;
+    margin-bottom: -4px!important;
+}
+
+.tileListList .tileListItem :global(.vtex-product-summary-2-x-information){
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
+
+.tileListItem :global(.vtex-product-summary-2-x-productBrand){
+    padding: 0;
+    font-size: 15px;
+    line-height: 17px;
+    max-height: 36px;
+    min-height: 36px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+
+.tileListList .tileListItem :global(.vtex-store-components-3-x-listPriceLabel){
+    padding: 0px;
+    text-decoration: none !important;
+    font-size: 0px;
+}
+.tileListList .tileListItem :global(.vtex-store-components-3-x-listPriceLabel)::before{
+    content: 'Antes';
+    font-size: 14px;
+}
+.tileListList .tileListItem :global(.vtex-store-components-3-x-sellingPriceLabel){
+    display: none !important;
+}
+.tileListList .tileListItem :global(.vtex-store-components-3-x-sellingPrice){
+    padding-left: 0px !important;
+}
+
+
+
+
+.itemList--suggestion .itemListTitle,
+.tileList .tileListTitle{
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+    opacity: 0.7;
+}
+.tileList .tileListTitle{
+    padding-left: 15px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .itemList{
+        width: 100% !important;
+        display: block !important;
+        margin-bottom: 20px !important;
+    }
+    .itemList .itemListItem :global(.vtex-search-2-x-itemListLink){
+        height: 22px !important;
+        padding: 0px 10px !important;
+    }
+    .tileList{
+        width: 100% !important;
+        display: block !important;
+    }
+    .tileListList .tileListItem{
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .tileListList .tileListItem .productBrand{
+        font-size: 12px !important;
+        line-height: 14px !important;
+        display: block !important;
+        font-weight: 600 !important;
+        margin-bottom: 4px !important;
+    }
+
+    .tileListList .tileListItem .currencyContainer{
+        font-size: 15px;
+        font-weight: bold;
+        color: #812481;
+    }
+    .itemList--suggestion .itemListSubItemLink{
+        display: block;
+        height: 25px;
+        line-height: 25px;
+    }
+    .itemList--suggestion .itemListLink{
+        margin-bottom: 12px;
+    }
+}

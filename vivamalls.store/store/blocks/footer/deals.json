@@ -1,0 +1,93 @@
+{
+    "flex-layout.row#deals": {
+      "children": [
+        "flex-layout.col#deals1",
+        "flex-layout.col#deals2",
+        "flex-layout.col#deals3"
+      ],
+      "props": {
+        "blockClass": "deals"
+      }
+    },
+  
+    "flex-layout.col#deals1": {
+      "children": [
+        "flex-layout.row#deals1"
+      ],
+      "props": {
+        "blockClass": "dealsrow"
+      }
+    },
+    "flex-layout.row#deals1": {
+        "children": [
+          "image#deal1",
+          "rich-text#deal1"
+        ]
+    },
+    "image#deal1": {
+      "props": {
+        "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+        "maxHeight": "28px"
+      }
+    },
+    "rich-text#deal1": {
+      "props": {
+        "text": "Más de 100 mil productos",
+        "blockClass": "deals"
+      }
+    },
+
+
+    "flex-layout.col#deals2": {
+      "children": [
+        "flex-layout.row#deals2"
+      ],
+      "props": {
+        "blockClass": "dealsrow"
+      }
+    },
+    "flex-layout.row#deals2": {
+        "children": [
+          "image#deal2",
+          "rich-text#deal2"
+        ]
+    },
+    "image#deal2": {
+      "props": {
+        "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
+        "maxHeight": "28px"
+      }
+    },
+    "rich-text#deal2": {
+      "props": {
+        "text": "Paga en línea o en efectivo",
+        "blockClass": "deals"
+      }
+    },
+    "flex-layout.col#deals3": {
+      "children": [
+        "flex-layout.row#deals3"
+      ],
+      "props": {
+        "blockClass": "dealsrow"
+      }
+    },
+    "flex-layout.row#deals3": {
+        "children": [
+          "image#deal3",
+          "rich-text#deal3"
+        ]
+    },
+    "image#deal3": {
+      "props": {
+        "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
+        "maxHeight": "28px"
+      }
+    },
+    "rich-text#deal3": {
+      "props": {
+        "text": "Compras seguras",
+        "blockClass": "deals"
+      }
+    }
+  }

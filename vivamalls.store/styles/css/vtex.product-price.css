@@ -1,0 +1,170 @@
+.listPrice {
+  color: #727273;
+  margin-bottom: .25rem;
+  font-size: 1rem;
+}
+
+.sellingPrice {
+  color: #3f3f40;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.sellingPriceValue {
+  font-size: 36px;
+  font-family: 'SFDisplay';
+  font-weight: 600;
+}
+.sellingPriceValue .currencyCode{
+  font-size: 27px;
+}
+
+.installments {
+  color: #727273;
+  margin-bottom: 1rem;
+}
+
+.savings {
+  font-weight: 500;
+  color: #79B03A;
+}
+
+.sellingPriceValue--summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2E2E2E;
+}
+
+.savings--summary {
+  background: #8BC34A;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #FFFFFF;
+}
+
+.savings-discount--summary {
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #FFFFFF;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.listPrice--summary {
+  margin-bottom: 0.25rem;
+  font-size: .875rem;
+}
+
+.installments--summary {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
+.savings--summaryPercentage {
+  background: #0f3e99;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+}
+
+.savingsPercentage--summaryPercentage {
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #FFFFFF;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.currencyContainer--summary{
+  color: #009DB2;
+  font-size: 27px;
+  font-family: 'Gotham';
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+.currencyCode--summary{
+  margin-right: -5px;
+}
+
+.listPrice{
+  /* display: none !important; */
+  height: 0;
+  position: relative;
+  top: -15px;
+  left: 0px;
+}
+
+.listPrice .currencyContainer--summary{
+  font-size: 14px !important;
+  font-family: 'SFDisplay';
+  color: #A1A1A1 !important;
+  font-weight: 600 !important;
+}
+.listPrice .currencyCode--summary{
+  margin-right: -2px !important;
+}
+.listPrice .currencyCode--summary::before{
+  content: 'Antes ';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+.savings{
+  display: none !important;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 992px) {
+  .currencyContainer--summary{
+    font-size: 18px;
+    padding: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .currencyCode--summary{
+
+  }
+  .currencyInteger{
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+  .currencyCode, .currencyGroup{
+    font-size: 20px !important;
+  }
+  .listPrice{
+    left: 12px;
+    top: auto;
+    bottom: 82px;
+    position: absolute;
+    height: auto;
+  }
+  .listPrice :global(.vtex-product-price-1-x-currencyContainer--summary){
+    font-size: 13px!important;
+    padding-left: 0px !important;
+  }
+  .listPrice .currencyInteger{
+    font-size: 13px!important;
+  }
+  .listPrice .currencyCode--summary::before{
+    font-size: 13px !important;
+  }
+  .listPrice .currencyCode--summary{
+    font-size: 13px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+}

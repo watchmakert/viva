@@ -1,0 +1,133 @@
+.newsletterButton :global(.vtex-button){
+    background: #812481;
+    border: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: 'Gotham';
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.newsletterInputAndButtonContainer{
+    border: 1px solid #812481;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.newsletterInput :global(.vtex-input-prefix__group){
+    background: transparent !important;
+    border: 0px;
+    padding-left: 10px;
+}
+.newsletterInput :global(.vtex-input__prefix){
+    display: none !important;
+}
+.newsletterInput{
+    width: 69%;
+}
+
+.newsletterInput :global(.vtex-styleguide-9-x-input){
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.newsletterTermsText{
+    font-family: 'Gotham';
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.newsletterCheckbox :global(.vtex-checkbox__inner-container){
+    border: 2px solid #812481;
+    position: relative;
+    top: -1px;
+}
+.newsletterCheckbox :global(.vtex-checkbox__box-wrapper){
+    top: 0px;
+}
+.newsletterCheckbox :global(.vtex-checkbox__input){
+    top: 0px;
+}
+.newsletterInputAndButtonContainer :global(.vtex-input__error){
+    position: absolute;
+    margin-top: 35px;
+    font-weight: bold;
+}
+
+.newsletterCheckbox :global(.vtex-checkbox__line-container){
+    top: -1px;
+}
+
+
+.newsletterTermsErrorContainer{
+    position: absolute;
+    margin-top: 12px;
+    font-weight: bold;
+}
+.newsletterTermsMessage{
+    font-size: 0px !important;
+}
+.newsletterTermsMessage::before{
+    content: 'Por favor, acepta nuestros términos y condiciones.' !important;
+    font-size: 16px !important;
+}
+
+/* .newsletterButton :global(.vtex-button){
+
+} */
+@media (max-width:992px){
+    .titleNewsletter{
+        font-size: 30px;
+    }
+    .subsitlteNewsLetter{
+        font-size: 28px;
+    }
+    .newsletterInputAndButtonContainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .newsletterInput{
+        display: inline-block;
+        width: 53%;
+    }
+    .newsletterButton{
+        display: inline-block;
+        width: 42%;
+        position: absolute;
+        right: 0;
+    }
+    .newsletterContainer{
+        padding: 40px 0;
+    }
+    .newsletterFormContaine{
+        padding: 20px 0;
+    }
+}
+
+@media (max-width:600px){
+    .newsletterButton :global(.vtex-button){
+        font-size: 15px;
+    }
+    .newsletterInput{
+        display: inline-block;
+        width: 50%;
+    }
+    .newsletterInputAndButtonContainer{
+        margin-bottom: 22px;
+        margin-top: -14px;
+    }
+
+    .newsletterInputAndButtonContainer :global(.vtex-input__error){
+        position: absolute;
+        margin-top: 2px;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    .newsletterTermsMessage::before{
+        font-size: 12px!important;
+    }
+}

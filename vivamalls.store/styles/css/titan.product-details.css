@@ -1,0 +1,8 @@
+.label{
+    position: absolute;
+    bottom: 0px;
+    font-family: 'Gotham';
+    font-weight: 600;
+    font-size: 20px;
+    display: none;
+}
